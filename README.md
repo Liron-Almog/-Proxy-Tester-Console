@@ -4,13 +4,17 @@ created a console-based program to test some proxy-like functions that control t
 
 The program will implement the following options:
 
-denying access to URLs based on a list of blocked sites that can be added/removed dynamically
-denying access to resources of type image
-denying access to resources of type html
-denying access to resources containing cookies
+## denying access to URLs based on a list of blocked sites that can be added/removed dynamically
+## denying access to resources of type image
+## denying access to resources of type html
+## denying access to resources containing cookies
+
 Program options
 List of blocked sites
-The list of blocked sites will be saved to a TEXT file named “blocked.txt" (define it as static so it can easily be changed). There should be one URL per line. The program should load at startup the list of blocked sites previously saved if any. The list should not contain duplicates. A URL should be blocked if it appears in the list or if any URL matches the beginning of the URL. For example if http://x.y.z is blocked, http://x.y.z/hello should be blocked.
+The list of blocked sites will be saved to a TEXT file named “blocked.txt" (define it as static so it can easily be changed). 
+There should be one URL per line. The program should load at startup the list of blocked sites previously saved if any.
+The list should not contain duplicates. A URL should be blocked if it appears in the list or if any URL matches the beginning of the URL. 
+For example if http://x.y.z is blocked, http://x.y.z/hello should be blocked.
 
 Console based commands
 The following console-based commands should be implemented:
