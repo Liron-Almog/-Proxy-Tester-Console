@@ -22,16 +22,14 @@ The program checks the URL syntax compliant with RC 2396 and prints "invalid URL
 given URL is invalid.
 The program does not check the connectivity of the URL.
 If blocked.txt does not exist, it is created.
-The program deals with file I/O errors as described below.
 u <url>: unblock a URL and update the list in blocked.txt.
 For example: u https://en.wikipedia.org/wiki/Main_Page
 The program is silent if the URL was not blocked.
-The program deals with file I/O errors as described below.
 p: prints the current list of blocked sites in alphabetical order.
-The program deals with file I/O errors as described below.
 q: exit the program.
 d <-options> <url> <out>: download the contents of a given URL to a file according to the denying options defined by one character code.
-Before actual execution, the program catches command syntax errors such as unknown command or wrong number of arguments (invalid command), then if syntax is OK, URL validity errors (invalid URL), then if URL is OK, options syntax errors for the download command (invalid option).
+Before actual execution, the program catches command syntax errors such as unknown command or wrong number of arguments (invalid command), 
+then if syntax is OK, URL validity errors (invalid URL), then if URL is OK, options syntax errors for the download command (invalid option).
 Note that the optional list of options must start with a "-" if present ("- " alone is valid).
 Denying options are applied in the given order. If a URL is both blocked and unreachable as is (HTTP status != 200), the output will depend on the order of options. For example, -bi will print "denied" while -ib could print "401".
 The program provides the following options:
