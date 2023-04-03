@@ -1,6 +1,6 @@
 
 # Introduction
-In this exercise, you will create a console-based program to test some proxy-like functions that control the downloading of URL resources from the web.
+created a console-based program to test some proxy-like functions that control the downloading of URL resources from the web.
 
 The program will implement the following options:
 
