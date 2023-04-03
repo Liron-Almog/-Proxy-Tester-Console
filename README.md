@@ -40,3 +40,6 @@ The program provides the following options:
 If a URL is blocked (by -b, -c, or -h), the command prints "denied".
 If a URL is not reachable (HTTP response 4XX or 5XX), the program prints the HTTP status code (e.g., "503").
 The program outputs "invalid URL" if the.
+
+Design patterns:
+Decorator, Singelton and Factory.
